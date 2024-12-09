@@ -1,8 +1,10 @@
 import "./hero.css";
+import Speech from "./speech/Speech";
 
 const Hero = () => {
 	return (
 		<div className="hero">
+			{/* LEFT SECTION */}
 			<div className="heroSection left">
 				{/* TITLE */}
 				<h1 className="heroTitle">
@@ -12,7 +14,7 @@ const Hero = () => {
 
 				{/* AWARDS */}
 				<div className="awards">
-					<h2>Top Rated Designer</h2>
+					<h2>Top Rated <br/>Web Developer</h2>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<div className="awardList">
 						<img src="../../../public/images/award1.png" alt="award1" />
@@ -44,7 +46,68 @@ const Hero = () => {
 					</svg>
 				</a>
 			</div>
-			<div className="heroSection right"></div>
+			{/* RIGHT SECTION */}
+			<div className="heroSection right">
+				{/* FOLLOW */}
+				<div className="follow">
+					<a href="/">
+						<img src="../images/facebook.png" alt="" />
+					</a>
+					<a href="/">
+						<img src="/images/instagram.png" alt="" />
+					</a>
+					<a href="/">
+						<img src="/images/youtube.png" alt="" />
+					</a>
+				</div>
+				{/* SPEECH */}
+				<div className="speech">
+					<Speech />
+				</div>
+				{/* CERTIFICATE */}
+				<div className="certificate">
+					<img src="/images/certificate.png" alt="" />
+					<br />
+					Professional
+					<br />
+					Web Developer
+				</div>
+				{/* CONTACT LINK */}
+				<a href="/#contact" className="contactLink">
+					<div className="contactButton">
+						<svg viewBox="0 0 200 200" width="150" height="150">
+							<circle cx="100" cy="100" r="90" fill="pink" />
+							<path
+								id="innerCirclePath"
+								fill="none"
+								d="M 100,100 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
+							/>
+							<text className="circleText">
+								<textPath href="#innerCirclePath">Hire Now •</textPath>
+							</text>
+							<text className="circleText">
+								<textPath href="#innerCirclePath" startOffset="47%">
+									Contact Me •
+								</textPath>
+							</text>
+						</svg>
+						<div className="arrow">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								width="50"
+								height="50"
+								fill="none"
+								stroke="black"
+								strokeWidth="2"
+							>
+								<line x1="6" y1="18" x2="18" y2="6" />
+								<polyline points="9 6 18 6 18 15" />
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
 	);
 };
