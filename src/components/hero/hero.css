@@ -12,10 +12,6 @@
 	justify-content: space-between;
 }
 
-.heroSection.right {
-	align-items: end;
-}
-
 .heroSection.left {
 	align-items: start;
 }
@@ -43,4 +39,54 @@
 .awardList {
 	display: flex;
 	gap: 8px;
+}
+
+.awardList img {
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+	background-color: white;
+	border-radius: 100%;
+}
+
+.heroSection.right {
+	align-items: end;
+}
+
+.scroll {
+	margin-bottom: 50px;
+	width: max-content;
+}
+
+.follow {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	padding: 16px;
+	background-color: #2f204e;
+	border-bottom-right-radius: 10px;
+}
+
+.follow img {
+	width: 20px;
+	height: 20px;
+}
+
+.followTextContainer {
+	width: 20px;
+	height: 20px;
+}
+
+.followText {
+	background-color: #dd4c62;
+	font-size: 12px;
+	rotate: 90deg;
+	width: max-content;
+	height: 100%;
+	transform-origin: left top;
+	transform: translateY(-20px);
+	padding: 0 8px;
+	display: flex;
+	align-items: center;
+	border-top-right-radius: 10px;
 }
