@@ -9,7 +9,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content:space-between;
 }
 
 .heroSection.left {
@@ -95,7 +95,7 @@
 	/* position: fixed; */
 	top: 50%;
 	right: 20px;
-	transform: translateY(-50%);
+	/* transform: translateY(-50%); */
 	width: 300px;
 	display: flex;
 	gap: 8px;
@@ -150,6 +150,7 @@
 
 .contactButton {
 	position: relative;
+	
 }
 .circleText {
 	letter-spacing: 3px;
