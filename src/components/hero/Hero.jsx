@@ -74,7 +74,7 @@ const Hero = () => {
 				{/* CERTIFICATE */}
 				<div className="certificate">
 					<img src="/images/certificate.png" alt="" />
-					<br />
+					
 					Professional
 					<br />
 					Web Developer

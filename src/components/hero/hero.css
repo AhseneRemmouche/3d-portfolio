@@ -100,7 +100,41 @@
 .bubbleContainer img {
 }
 
-.certificate{
+.certificate {
 	width: 60%;
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: 300;
+	color: #ddd;
+}
+
+.certificate img {
+	width: 70px;
+	height: 70px;
+}
+
+.contactButton {
+	position: relative;
+}
+.circleText {
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+.arrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	rotate: 80deg;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
