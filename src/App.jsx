@@ -1,3 +1,4 @@
+import Animation from "./components/Animation";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -19,6 +20,8 @@ function App() {
 			<section id="contact">
 				<Contact />
 			</section>
+
+			{/* <Animation /> */}
 		</div>
 	);
 }

@@ -29,7 +29,6 @@ const Hero = () => {
 				{/* SCROLL SVG */}
 				<a href="#services" className="scroll">
 					<svg
-						
 						width="50px"
 						height="50px"
 						viewBox="0 0 24 24"
@@ -74,7 +73,6 @@ const Hero = () => {
 				{/* CERTIFICATE */}
 				<div className="certificate">
 					<img src="/images/certificate.png" alt="" />
-					
 					Professional
 					<br />
 					Web Developer
@@ -118,7 +116,7 @@ const Hero = () => {
 			<div className="bg">
 				{/*  3d  */}
 				<div className="heroImg">
-					<img src="/images/hero7.png" alt="" />
+					<img src="/images/hero.png" alt="" />
 				</div>
 			</div>
 		</div>
