@@ -1,5 +1,23 @@
+import { easeIn } from "motion";
 import "./hero.css";
 import Speech from "./speech/Speech";
+import { motion } from "motion/react";
+
+const awardsVariants = {
+	initialAwards: {
+		x: -40,
+
+		opacity: 0,
+	},
+	animateAwards: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 2,
+			ease: easeIn,
+		},
+	},
+};
 
 const Hero = () => {
 	return (
@@ -7,24 +25,36 @@ const Hero = () => {
 			{/* LEFT SECTION */}
 			<div className="heroSection left">
 				{/* TITLE */}
-				<h1 className="heroTitle">
+				<motion.h1
+					variants={awardsVariants}
+					initial="initialAwards"
+					animate="animateAwards"
+					className="heroTitle"
+				>
 					Hi There, <br />
-					<span>I&apos;am Ahsene!</span>
-				</h1>
+					<motion.span variants={awardsVariants}>I&apos;am Ahsene!</motion.span>
+				</motion.h1>
 
 				{/* AWARDS */}
-				<div className="awards">
-					<h2>
+				<motion.div
+					variants={awardsVariants}
+					initial="initialAwards"
+					animate="animateAwards"
+					className="awards"
+				>
+					<motion.h2 variants={awardsVariants}>
 						Top Rated <br />
 						Web Developer
-					</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<div className="awardList">
-						<img src="../../../public/images/award1.png" alt="award1" />
-						<img src="../../../public/images/award2.png" alt="award2" />
-						<img src="../../../public/images/award3.png" alt="award3" />
-					</div>
-				</div>
+					</motion.h2>
+					<motion.p variants={awardsVariants}>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					</motion.p>
+					<motion.div variants={awardsVariants} className="awardList">
+						<motion.img src="../../../public/images/award1.png" alt="award1" />
+						<motion.img src="../../../public/images/award2.png" alt="award2" />
+						<motion.img src="../../../public/images/award3.png" alt="award3" />
+					</motion.div>
+				</motion.div>
 
 				{/* SCROLL SVG */}
 				<a href="#services" className="scroll">
