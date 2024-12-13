@@ -27,7 +27,7 @@ const Animation = () => {
 				justifyContent: "center",
 			}}
 		>
-			{/* <motion.div
+			<motion.div
 				initial={{ x: 0, y: 200, opacity: 1, width: 200 }}
 				animate={{ x: 200, y: -200, opacity: 0.5, width: 400 }}
 				transition={{ duration: 2, ease: easeInOut, repeat: Infinity }}
@@ -35,7 +35,7 @@ const Animation = () => {
 				style={{ width: 200, height: 200, backgroundColor: "blue" }}
 			>
 				Animation
-			</motion.div> */}
+			</motion.div>
 			<motion.ul
 				variants={listVariants}
 				initial="initialList"
