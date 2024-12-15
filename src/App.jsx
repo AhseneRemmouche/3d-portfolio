@@ -9,7 +9,7 @@ function App() {
 	return (
 		<div className="container">
 			{/* <h1>Bismi Allah</h1> */}
-			{/* <section id="hero">
+			<section id="hero">
 				<Hero />
 			</section>
 			<section id="services">
@@ -20,8 +20,8 @@ function App() {
 			</section>
 			<section id="contact">
 				<Contact />
-			</section> */}
-			<Animation3d />
+			</section>
+			{/* <Animation3d /> */}
 			{/* <Animation /> */}
 		</div>
 	);
