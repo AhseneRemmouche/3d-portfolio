@@ -138,7 +138,7 @@ const Hero = () => {
 						<div className="followText">FOLLOW ME</div>
 					</motion.div>
 				</motion.div>
-				{/* SPEECH */}
+				{/* SPEECH - BUBBLE */}
 				<div className="speech">
 					<Speech />
 				</div>
