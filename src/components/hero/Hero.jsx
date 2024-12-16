@@ -2,6 +2,7 @@ import { animate, easeIn, easeInOut } from "motion";
 import "./hero.css";
 import Speech from "./speech/Speech";
 import { motion } from "motion/react";
+import Shape from "./shape/Shape";
 
 const awardVariants = {
 	initialAwards: {
@@ -205,8 +206,9 @@ const Hero = () => {
 			</div>
 			<div className="bg">
 				{/*  3d  */}
+				<Shape />
 				<div className="heroImg">
-					<img src="/images/hero.png" alt="" />
+					{/* <img src="/images/hero.png" alt="" /> */}
 				</div>
 			</div>
 		</div>
