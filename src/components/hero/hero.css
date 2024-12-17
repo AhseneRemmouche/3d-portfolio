@@ -19,7 +19,7 @@
 	right: 0;
 	left: 0;
 	margin: auto;
-	height: 100%;
+	height: 80%;
 	width: max-content;
 }
 
@@ -203,7 +203,7 @@
 
 @media (max-width: 1280px) {
 	.bg {
-		height: 80%;
+		height: 70%;
 		top: auto;
 		bottom: 0;
 	}
