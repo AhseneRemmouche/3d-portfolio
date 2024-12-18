@@ -1,14 +1,14 @@
 import { Canvas } from "@react-three/fiber";
+import { MacBook } from "./Macbook";
 import { Suspense } from "react";
-import { Laptop } from "./Laptop";
 import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
 
-const LaptopContainer = () => {
+const MacBookContainer = () => {
 	return (
 		<Canvas>
 			<Suspense fallback="loading...">
-				<Stage environment={"apartment"} intensity={0.7}>
-					<Laptop />
+				<Stage environment={"night"} intensity={0.5}>
+					<MacBook />
 				</Stage>
 				<OrbitControls enableZoom={false} />
 				<PerspectiveCamera position={[-1, 0, 1.8]} zoom={0.7} makeDefault />
@@ -17,4 +17,4 @@ const LaptopContainer = () => {
 	);
 };
 
-export default LaptopContainer;
+export default MacBookContainer;
