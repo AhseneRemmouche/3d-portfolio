@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import Shape from "./shape/Shape";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import AllahContainer from "../services/Allah/AllahContainer";
+import AirplaneContainer from "../services/airplane/AirplaneContainer";
 
 const awardVariants = {
 	initialAwards: {
