@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stampe S.V.4
+* source:	https://sketchfab.com/3d-models/stampe-sv4-952733347b6d4a1d8ceb7c3b816dea82
+* author:	helijah (https://sketchfab.com/helijah)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stampe S.V.4" (https://sketchfab.com/3d-models/stampe-sv4-952733347b6d4a1d8ceb7c3b816dea82) by helijah (https://sketchfab.com/helijah) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

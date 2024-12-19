@@ -1,3 +1,6 @@
+import AirplaneContainer from "./airplane/AirplaneContainer";
+import AllahContainer from "./Allah/AllahContainer";
+import CarContainer from "./car/CarContainer";
 import { Laptop } from "./laptop/Laptop";
 import LaptopContainer from "./laptop/LaptopContainer";
 import MacBookContainer from "./macBook/MacBookContainer";
@@ -7,9 +10,11 @@ const Services = () => {
 	return (
 		<div className="services">
 			<div className="servicesSection left">
-				<MacBookContainer />
+				<AirplaneContainer />
 			</div>
-			<div className="servicesSection right"></div>
+			<div className="servicesSection right">
+				<CarContainer />
+			</div>
 		</div>
 	);
 };
