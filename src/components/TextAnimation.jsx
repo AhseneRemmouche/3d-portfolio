@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 
 const TextAnimation = () => {
-	const shapeVariant = {
+	const shapeVariants = {
 		initialCircle: {
 			x: 200,
 			y: 200,
@@ -15,16 +15,36 @@ const TextAnimation = () => {
 			opacity: 0.5,
 			transition: {
 				duration: 3,
-				repeat: Infinity,
+				// repeat: Infinity,
 			},
 		},
 		initialSquare: {
-			x: 0,
-			y: 0,
-		},
-		animateSquare: {
 			x: 200,
 			y: 200,
+		},
+		animateSquare: {
+			x: -200,
+			y: 0,
+			transition: {
+				duration: 3,
+				// repeat: Infinity,
+			},
+		},
+	};
+	const listVariants = {
+		initial: {
+			x: -100,
+			y: -100,
+			opacity: 0,
+		},
+		animate: {
+			x: 0,
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 3,
+				staggerChildren: 1,
+			},
 		},
 	};
 
@@ -52,16 +72,26 @@ const TextAnimation = () => {
 				// 	repeat: Infinity,
 				// }}
 
-				variants={shapeVariant}
+				variants={shapeVariants}
 				initial="initialCircle"
 				animate="animateCircle"
 			></motion.div>
 			<motion.div
-				style={{ width: 200, height: 200, backgroundColor: "orange" }}
-				variants={shapeVariant}
+				style={{
+					width: 200,
+					height: 200,
+					backgroundColor: "orange",
+					zIndex: -1,
+				}}
+				variants={shapeVariants}
 				initial="initialSquare"
 				animate="animateSquare"
 			></motion.div>
+			<motion.ul variants={listVariants} initial="initial" animate="animate">
+				<motion.li variants={listVariants}>JavaScript</motion.li>
+				<motion.li variants={listVariants}>React JS</motion.li>
+				<motion.li variants={listVariants}>Next JS</motion.li>
+			</motion.ul>
 		</section>
 	);
 };
