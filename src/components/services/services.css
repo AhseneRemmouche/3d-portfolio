@@ -11,5 +11,80 @@
 	justify-content: center;
 }
 
+.servicesTitle {
+	font-size: 58px;
+	margin-bottom: 24px;
+}
+
+.servicesList {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.service {
+	width: 50%;
+	padding: 30px;
+	background-color: #2f213f;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	cursor: pointer;
+}
+
+.serviceIcon {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.serviceIcon img {
+	width: 30px;
+	height: 30px;
+}
+
+.servicesList h2 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.servicesList h3 {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.service:nth-child(1) .serviceIcon {
+	background-color: #dd4c62;
+}
+
+.service:nth-child(2) .serviceIcon{
+	background-color: #025656;
+}
+
+.service:nth-child(3) .serviceIcon{
+	background-color: #6c5c0c;
+}
+
 .servicesSection.left {
+}
+
+@media (max-width: 1536px) {
+	.servicesTitle {
+		font-size: 48px;
+		margin-top: 15px;
+		margin-bottom: 24px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.servicesTitle {
+		font-size: 32px;
+		margin-top: 35px;
+		margin-bottom: 18px;
+	}
 }
