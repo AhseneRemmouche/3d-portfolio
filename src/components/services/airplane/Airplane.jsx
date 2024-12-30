@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
 export function Airplane(props) {
-	const { nodes, materials } = useGLTF("images/airplane/airplane.glb");
+	const { nodes, materials } = useGLTF("images/airplane/airplane.glb", props);
 	return (
 		<group {...props} dispose={null}>
 			<group rotation={[-Math.PI / 2, 0, 0]}>

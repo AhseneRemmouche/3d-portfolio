@@ -13,7 +13,7 @@ import { useGLTF } from "@react-three/drei";
 import { SkeletonUtils } from "three-stdlib";
 
 export function Car(props) {
-	const { scene } = useGLTF("images/car/car.glb");
+	const { scene } = useGLTF("images/car/car.glb", props);
 	const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
 	const { nodes, materials } = useGraph(clone);
 	return (

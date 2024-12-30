@@ -7,7 +7,7 @@ const AllahContainer = () => {
 	return (
 		<Canvas>
 			<Suspense fallback="loading...">
-				<Stage environment={"Forest"} intensity={0.5}>
+				<Stage environment={"forest"} intensity={0.5}>
 					<Allah />
 				</Stage>
 				<OrbitControls enableZoom={false} />

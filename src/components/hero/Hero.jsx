@@ -7,6 +7,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import AllahContainer from "../services/Allah/AllahContainer";
 import AirplaneContainer from "../services/airplane/AirplaneContainer";
+import AvatarContainer from "./avatar/AvatarContainer";
 
 const awardVariants = {
 	initialAwards: {
@@ -216,7 +217,8 @@ const Hero = () => {
 					</Suspense>
 				</Canvas>
 				<div className="heroImg">
-					<img src="/images/hero.png" alt="" />
+					{/* <AvatarContainer /> */}
+					<img src="/images/hero7.png" alt="" />
 				</div>
 			</div>
 		</div>
