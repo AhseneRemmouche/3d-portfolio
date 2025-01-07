@@ -13,6 +13,13 @@
 	justify-content: center;
 }
 
+.contactSection:last-child {
+	background-color: rgba(2, 2, 45, 0.187);
+	margin: 50px 0px;
+	padding: 50px;
+	border-radius: 50% 0px;
+}
+
 form {
 	width: 80%;
 	display: flex;
@@ -47,4 +54,34 @@ label {
 	color: white;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+	.form {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.contact {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact {
+		flex-direction: column;
+		gap:5px
+	}
+
+	.contactSection {
+		width: 100%;
+	}
+
+	.contactSection:first-child {
+		height: 70%;
+	}
+	.contactSection:last-child {
+		height: 30%;
+	}
 }
