@@ -218,7 +218,7 @@ const Hero = () => {
 				</Canvas>
 				<div className="heroImg">
 					{/* <AvatarContainer /> */}
-					<img src="/images/hero7.png" alt="" />
+					{/* <img src="/images/hero9.png" alt="" /> */}
 				</div>
 			</div>
 		</div>
