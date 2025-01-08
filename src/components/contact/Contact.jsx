@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 import "./contact.css";
 import ContactSvg from "./ContactSvg";
 
@@ -43,10 +44,13 @@ const Contact = () => {
 				() => {
 					setSuccess(true);
 					setError(false);
+					// show snackbar
+					toast.success("Your Message Sent Successfully!");
 				},
 				(error) => {
 					setError(true);
 					setSuccess(false);
+					toast.error("Something Went Wrong!");
 				}
 			);
 	};
@@ -92,11 +96,29 @@ const Contact = () => {
 					<motion.button className="formButton" variants={listVariant}>
 						Send
 					</motion.button>
-					{success ? <pann>Your message has been sent!</pann> : ""}
+
+					{/* {success ? <ToastContainer /> : ""} */}
 					{error && <span>Something went wrong!</span>}
 				</motion.form>
 			</div>
-			<div className="contactSection"><ContactSvg /></div>
+
+			<ToastContainer
+				position="top-right"
+				autoClose={3000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick={false}
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="light"
+				transition={Bounce}
+			/>
+
+			<div className="contactSection">
+				<ContactSvg />
+			</div>
 		</div>
 	);
 };
