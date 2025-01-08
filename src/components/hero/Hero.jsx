@@ -71,22 +71,22 @@ const Hero = () => {
 					<motion.div variants={awardVariants} className="awardList">
 						<motion.img
 							variants={awardVariants}
-							src="../../../public/images/mongodb.png"
+							src="images/mongodb.png"
 							alt="award1"
 						/>
 						<motion.img
 							variants={awardVariants}
-							src="../../../public/images/express.png"
+							src="images/express.png"
 							alt="award2"
 						/>
 						<motion.img
 							variants={awardVariants}
-							src="../../../public/images/react.png"
+							src="images/react.png"
 							alt="award3"
 						/>
 						<motion.img
 							variants={awardVariants}
-							src="../../../public/images/node.png"
+							src="images/node.png"
 							alt="award3"
 						/>
 					</motion.div>
@@ -132,13 +132,13 @@ const Hero = () => {
 					className="follow"
 				>
 					<motion.a variants={followVariants} href="/">
-						<img src="../images/facebook.png" alt="" />
+						<img src="images/facebook.png" alt="" />
 					</motion.a>
 					<motion.a variants={followVariants} href="/">
-						<img src="/images/instagram.png" alt="" />
+						<img src="images/instagram.png" alt="" />
 					</motion.a>
 					<motion.a variants={followVariants} href="/">
-						<img src="/images/youtube.png" alt="" />
+						<img src="images/youtube.png" alt="" />
 					</motion.a>
 					<motion.div variants={followVariants} className="followTextContainer">
 						<div className="followText">FOLLOW ME</div>
