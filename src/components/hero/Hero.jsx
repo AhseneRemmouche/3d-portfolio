@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import AllahContainer from "../services/Allah/AllahContainer";
 import AirplaneContainer from "../services/airplane/AirplaneContainer";
 import AvatarContainer from "./avatar/AvatarContainer";
+import { Link } from "react-router-dom";
 
 const awardVariants = {
 	initialAwards: {
@@ -93,10 +94,11 @@ const Hero = () => {
 				</motion.div>
 
 				{/* SCROLL SVG */}
+
 				<motion.a
 					animate={{ opacity: [0, 1, 0] }}
 					transition={{ repeat: Infinity, duration: 3, ease: easeInOut }}
-					href="#services"
+					href="/#services"
 					className="scroll"
 				>
 					<svg

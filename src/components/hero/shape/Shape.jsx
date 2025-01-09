@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { MeshDistortMaterial, Sphere } from "@react-three/drei";
 
 const Shape = () => {

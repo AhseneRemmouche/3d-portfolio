@@ -1,5 +1,6 @@
 import Animation from "./components/Animation";
 import Animation3d from "./components/Animation3d";
+
 // import Contact from "./components/contact/Contact";
 // import Hero from "./components/hero/Hero";
 // import Portfolio from "./components/portfolio/Portfolio";
@@ -37,7 +38,7 @@ function App() {
 					{/* </section> */}
 				</LazyLoad>
 			</Suspense>
-			<Suspense fallback={"...loading"} >
+			<Suspense fallback={"...loading"}>
 				<LazyLoad height={"100vh"} offset={-100}>
 					<section id="contact">
 						<Contact />
