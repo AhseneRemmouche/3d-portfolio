@@ -10,7 +10,7 @@ const MacBookContainer = () => {
 				<Stage environment={"night"} intensity={0.5}>
 					<MacBook />
 				</Stage>
-				<OrbitControls enableZoom={false} />
+				<OrbitControls enableZoom={false} autoRotate/>
 				<PerspectiveCamera position={[-1, 0, 1.8]} zoom={0.7} makeDefault />
 			</Suspense>
 		</Canvas>

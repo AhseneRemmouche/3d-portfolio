@@ -11,7 +11,7 @@ const AirplaneContainer = () => {
 				<Stage environment={"apartment"} intensity={0.5}>
 					<Airplane onLoad={() => setIsLoading(false)} />
 				</Stage>
-				<OrbitControls enableZoom={false} />
+				<OrbitControls enableZoom={false} autoRotate />
 				<PerspectiveCamera position={[-1, 1, 1.8]} zoom={0.9} makeDefault />
 			</Suspense>
 		</Canvas>

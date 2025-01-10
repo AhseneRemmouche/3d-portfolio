@@ -8,6 +8,8 @@ import Counter from "./Counter";
 import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 import AllahContainer from "./Allah/AllahContainer";
 import AvatarContainer from "../hero/avatar/AvatarContainer";
+import PhoenixContainer from "./phoenix/PhoenixContainer";
+import NightSkyContainer from "./nightSky/NightSkyContainer";
 
 const textVariants = {
 	initial: {
@@ -110,8 +112,9 @@ const Services = () => {
 				{currentServiceId === 1 ? (
 					<MacBookContainer />
 				) : currentServiceId === 2 ? (
-					<CarContainer />
+					<PhoenixContainer />
 				) : (
+					//<CarContainer />
 					// <AvatarContainer />
 					<AirplaneContainer />
 				)}

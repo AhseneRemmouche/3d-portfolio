@@ -9,6 +9,7 @@ import AllahContainer from "../services/Allah/AllahContainer";
 import AirplaneContainer from "../services/airplane/AirplaneContainer";
 import AvatarContainer from "./avatar/AvatarContainer";
 import { Link } from "react-router-dom";
+import NightSkyContainer from "../services/nightSky/NightSkyContainer";
 
 const awardVariants = {
 	initialAwards: {
@@ -212,12 +213,13 @@ const Hero = () => {
 				</motion.a>
 			</div>
 			<div className="bg">
+				<NightSkyContainer />
 				{/*  3d  */}
-				<Canvas>
+				{/* <Canvas>
 					<Suspense fallback="loading...">
 						<Shape />
 					</Suspense>
-				</Canvas>
+				</Canvas> */}
 				<div className="heroImg">
 					{/* <AvatarContainer /> */}
 					{/* <img src="/images/hero9.png" alt="" /> */}
